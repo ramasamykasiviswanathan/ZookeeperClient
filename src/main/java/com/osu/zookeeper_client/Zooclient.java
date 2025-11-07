@@ -16,9 +16,8 @@ public class Zooclient {
     public Zooclient() {
     	zkConnection = new ZKConnection();
     	try {
-			zkeeper = zkConnection.connect("localhost");
+			zkeeper = zkConnection.connect("198.22.255.22:25410,198.22.255.22:2181");
 		} catch (IOException | InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
     }
